@@ -3,38 +3,42 @@
 
 /**
  * main - prints all possible different combinations of three digits
- *
  * Return: Always 0 (Success)
- *
  */
 
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
-	int hundreds = '0';
+	int c;
+	int d;
+	int e = 0;
 
-	for (hundreds = '0'; hundreds <= '9'; hundreds++)/* prints hundreds digit*/
+	while (e < 10)
 	{
-		for (tens = '0'; tens <= '9'; tens++)/* prints tes digit*/
+		d = 0;
+		while (d < 10)
 		{
-			for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
+			c = 0;
+			while (c < 10)
 			{
-				if (!((ones == tens) || (tens == hundreds) ||
-							(tens > ones) || (hundreds > tens))) /*eliminates repetition*/
+				if (c != d && d != e && e < d && d < c)
 				{
-					putchar(hundreds);
-					putchar(tens);
-					putchar(ones);
-					if (!(ones == '9' && hundreds == '7' &&
-								tens == '8')) /*adds commas and spaces*/
+					putchar('0' + e);
+					putchar('0' + d);
+					putchar('0' + c);
+
+					if (c + d + e != 9 + 8 + 7)
 					{
-						putchar('.');
+						putchar(',');
 						putchar(' ');
 					}
 				}
+
+				c++;
 			}
+
+			d++;
 		}
+		e++;
 	}
 	putchar('\n');
 	return (0);
