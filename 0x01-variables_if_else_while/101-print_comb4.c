@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints all possible different combinations of three digits
@@ -13,11 +14,11 @@ int main(void)
 	int tens = '0';
 	int hundreds = '0';
 
-	for (hundreds = '0'; hundreds <= '9'; hundreds++)
+	for (hundreds = '0'; hundreds <= '9'; hundreds++)/* prints hundreds digit*/
 	{
-		for (tens = '0'; tens <= '9'; tens++)
+		for (tens = '0'; tens <= '9'; tens++)/* prints tes digit*/
 		{
-			for (ones = '0'; ones <= '9'; ones++)
+			for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
 			{
 				if (!((ones == tens) || (tens == hundreds) ||
 						(tens > ones) || (hundreds > tens))) /*eliminates repetition*/
