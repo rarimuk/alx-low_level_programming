@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - main function to generate a random number
+ * main - prints if the number is positive, negative or 0
  *
  * Return: Always 0 (Success)
  *
