@@ -1,17 +1,24 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet_x10 - make alphabet x10 times
  *
- * Return: Always 0
+ * Return: void
  */
 
-int main(void)
+void print_alphabet_x10(void)
 
 {
-	print_alphabet_x10();
+	char c;
+	int i = 0;
 
-	return (0);
-
+	while (i < = 0)
+	{
+	for (c = 'a'; c < = 'z'; c++)
+	}
+	_putchar(c);
+	{
+	_putchar('\n);
+	i++;
+	}
 }
-
