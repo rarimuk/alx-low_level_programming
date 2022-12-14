@@ -1,4 +1,4 @@
-#include "main,h"
+#include "main.h"
 
 /**
  * print_times_table - prints the times table of the input,
@@ -32,7 +32,7 @@ void print_times_table(int n)
 	{
 	_putchar((prod / 10) + '0');
 	}
-	putchar((prod % 10) + '0')
+	_putchar((prod % 10) + '0');
 	}
 	_putchar('\n');
 	}
