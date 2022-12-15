@@ -1,5 +1,1 @@
-0X03-debugging
-
-Debugging
-This is the process of identifying and removing errors form computer hardware or software.
-
+0x03-debugging
